@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "babel ./src/index.js --out-file ./dist/index.js",
+    "prepublish": "npm run build",
     "test": "mocha --compilers js:babel-register --reporter '../../../dist/index.js'"
   },
   "author": "",
