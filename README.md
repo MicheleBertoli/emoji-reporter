@@ -17,4 +17,4 @@ mocha --reporter=emoji-reporter
 
 ## Preview
 
-![Preview](images/screenshot.png)
+![Preview](https://raw.githubusercontent.com/MicheleBertoli/emoji-reporter/master/images/screenshot.png)
