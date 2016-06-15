@@ -14,3 +14,7 @@ npm install emoji-reporter --save-dev
 ```bash
 mocha --reporter=emoji-reporter
 ```
+
+## Preview
+
+![Preview](images/screenshot.png)
