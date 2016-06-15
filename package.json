@@ -24,5 +24,9 @@
     "eslint-plugin-jsx-a11y": "^1.4.2",
     "eslint-plugin-react": "^5.1.1",
     "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "pretty-ms": "^2.1.0"
   }
 }
