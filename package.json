@@ -1,6 +1,6 @@
 {
   "name": "emoji-reporter",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "❤️ The best mocha reporter ever",
   "main": "dist/index.js",
   "files": [
@@ -11,8 +11,21 @@
     "prepublish": "npm run build",
     "test": "mocha --compilers js:babel-register --reporter '../../../dist/index.js'"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicheleBertoli/emoji-reporter.git"
+  },
+  "keywords": [
+    "mocha",
+    "mochajs",
+    "emoji"
+  ],
+  "author": "Michele Bertoli",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MicheleBertoli/emoji-reporter/issues"
+  },
+  "homepage": "https://github.com/MicheleBertoli/emoji-reporter#readme",
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-plugin-add-module-exports": "^0.2.1",
