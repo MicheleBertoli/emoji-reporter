@@ -1,25 +1,28 @@
-import { inherits } from 'util'
-import base from 'mocha/lib/reporters/base'
+import Base from 'mocha/lib/reporters/base'
 
-export default function emoji(runner) {
-  base.call(this, runner)
+class Emoji extends Base {
 
-  runner.on('pass', () => {
-    process.stdout.write('😻 ')
-  })
+  constructor(runner) {
+    super(runner)
 
-  runner.on('pending', () => {
-    process.stdout.write('🙀 ')
-  })
+    runner.on('pass', () => {
+      process.stdout.write('😻 ')
+    })
 
-  runner.on('fail', () => {
-    process.stdout.write('😿 ')
-  })
+    runner.on('pending', () => {
+      process.stdout.write('🙀 ')
+    })
 
-  runner.on('end', () => {
-    console.log()
-    this.epilogue()
-  })
+    runner.on('fail', () => {
+      process.stdout.write('😿 ')
+    })
+
+    runner.on('end', () => {
+      console.log()
+      this.epilogue()
+    })
+  }
+
 }
 
-inherits(emoji, base)
+export default Emoji
