@@ -1,6 +1,6 @@
 {
   "name": "emoji-reporter",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "❤️ The best mocha reporter ever",
   "main": "dist/index.js",
   "files": [
@@ -9,7 +9,8 @@
   "scripts": {
     "build": "babel ./src --out-dir ./dist",
     "prepublish": "npm run build",
-    "test": "mocha --compilers js:babel-register --reporter '../../../dist/index.js'"
+    "test": "mocha --compilers js:babel-register",
+    "test:emoji": "npm test -- --reporter '../../../dist/index.js'"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "eslint-plugin-import": "^1.8.1",
     "eslint-plugin-jsx-a11y": "^1.4.2",
     "eslint-plugin-react": "^5.1.1",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4"
   }
 }

@@ -6,21 +6,25 @@ class Emoji extends Base {
     super(runner)
 
     runner.on('pass', () => {
-      process.stdout.write('😻 ')
+      this.write('😻 ')
     })
 
     runner.on('pending', () => {
-      process.stdout.write('🙀 ')
+      this.write('🙀 ')
     })
 
     runner.on('fail', () => {
-      process.stdout.write('😿 ')
+      this.write('😿 ')
     })
 
     runner.on('end', () => {
       console.log()
       this.epilogue()
     })
+  }
+
+  write(msg) {
+    process.stdout.write(msg)
   }
 
 }
