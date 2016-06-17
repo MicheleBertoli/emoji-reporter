@@ -46,4 +46,11 @@ describe('test', () => {
 
     console.log = log
   })
+
+  it('appends shit to failures', () => {
+    const test = { title: 'foo' }
+    runner.emit('fail', test)
+
+    assert.equal(test.title, 'foo 💩 ')
+  })
 })
