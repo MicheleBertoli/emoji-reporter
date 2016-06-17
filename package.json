@@ -1,6 +1,6 @@
 {
   "name": "emoji-reporter",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "❤️ The best mocha reporter ever",
   "main": "dist/index.js",
   "files": [
