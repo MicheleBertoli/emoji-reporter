@@ -13,7 +13,8 @@ class Emoji extends Base {
       this.write('🙀 ')
     })
 
-    runner.on('fail', () => {
+    runner.on('fail', (test) => {
+      test.title += ' 💩 '
       this.write('😿 ')
     })
 

@@ -10,7 +10,7 @@
     "build": "babel ./src --out-dir ./dist",
     "prepublish": "npm run build",
     "test": "mocha --compilers js:babel-register",
-    "test:emoji": "npm test -- --reporter '../../../dist/index.js'"
+    "test:emoji": "npm run build && npm test -- --reporter dist/index.js"
   },
   "repository": {
     "type": "git",
